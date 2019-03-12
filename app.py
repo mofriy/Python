@@ -50,10 +50,6 @@ class MainWindow(qw.QWidget):
         print(3, 3, 3)
 
     @pyqtSlot(bool)
-    def fourthOperation(self, evt):
-        print(4)
-
-    @pyqtSlot(bool)
     def pentagonOperation(self, evt):
         for i in range(10):
             print('.', end=' ')
