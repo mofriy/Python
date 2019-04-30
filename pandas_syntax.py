@@ -31,21 +31,21 @@ class mylist:
         for i in self.x:
             if i==t:
                 a.append(i)
-        return (i for i in a)
+        return a
     
     def __le__(self, t):
         a = []
         for i in self.x:
             if i <= t:
                 a.append(i)
-        return (i for i in a)
+        return a
     
     def __ge__(self, t):
         a = []
         for i in self.x:
             if i >= t:
                 a.append(i)
-        return (i for i in a)
+        return a
     
     def __contains__(self, x):
         if type(x)==int:
