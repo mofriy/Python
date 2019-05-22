@@ -1,0 +1,14 @@
+{%extends "base.html" %}
+
+{%block content %}
+
+<p>Am I primal?</p>
+
+<form action = "/primal" method = "GET">
+    <input type="number", name="number", value="{{num}}" />
+    <input type="submit", value="get">
+</form>
+
+<p>{{res}}</p>
+
+{%endblock%}

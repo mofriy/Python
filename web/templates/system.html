@@ -1,0 +1,15 @@
+{%extends "base.html" %}
+
+{%block content %}
+
+<p>New system</p>
+
+<form action = "/system" method = "GET">
+    <input type="number", name="number", value="{{num}}" />
+    <input type="number", name="system", value="{{sys}}" />
+    <input type="submit", value="get">
+</form>
+
+<p>In {{sys}}-system {{num}} is {{res}} </p>
+
+{%endblock%}

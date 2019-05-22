@@ -1,0 +1,15 @@
+{%extends "base.html" %}
+
+{%block content %}
+
+<p>GCD but... EXTENDED!!!</p>
+
+<form action = "/egcd" method = "GET">
+    <input type="number", name="number1", value="{{num1}}" />
+    <input type="number", name="number2", value="{{num2}}" />
+    <input type="submit", value="get">
+</form>
+
+<p>{{res}} </p>
+
+{%endblock%}

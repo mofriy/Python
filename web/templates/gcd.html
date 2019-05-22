@@ -1,0 +1,15 @@
+{%extends "base.html" %}
+
+{%block content %}
+
+<p>GCD</p>
+
+<form action = "/gcd" method = "GET">
+    <input type="number", name="number1", value="{{num1}}" />
+    <input type="number", name="number2", value="{{num2}}" />
+    <input type="submit", value="get">
+</form>
+
+<p>({{num1}}, {{num2}}) == {{res}} </p>
+
+{%endblock%}
